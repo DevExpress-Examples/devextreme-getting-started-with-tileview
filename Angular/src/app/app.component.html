@@ -1,3 +1,24 @@
 <div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+  <dx-tile-view
+    [dataSource]="bikes"
+    [itemMargin]="5"
+    [baseItemWidth]="175"
+    [baseItemHeight]="175"
+    showScrollbar="always"
+    [height]="370"
+    itemTemplate="tileTemplate"
+    (onItemClick)="onItemClick($event)"
+  >
+    <div *dxTemplate="let data of 'tileTemplate'">
+      @if (!data.disabled) {
+        <div class="image" [style]="{ 'background-image': 'url(' + data.imageSrc + ')' }">
+          <p class="price-text">{{ formatNumber(data.price, 'currency') }}</p>
+        </div>
+      } @else {
+        <div class="image" [style]="{ 'background-image': 'url(' + data.imageSrc + ')', 'opacity': '50%' }">
+          <p class="price-text">Out of stock</p>
+        </div>
+      }
+    </div>
+  </dx-tile-view>
 </div>
