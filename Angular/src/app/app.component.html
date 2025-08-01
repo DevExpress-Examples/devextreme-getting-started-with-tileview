@@ -7,7 +7,7 @@
     showScrollbar="always"
     [height]="370"
     itemTemplate="tileTemplate"
-    (onItemClick)="onItemClick($event)"
+    (onItemClick)="handleItemClick($event)"
   >
     <div *dxTemplate="let data of 'tileTemplate'">
       @if (!data.disabled) {

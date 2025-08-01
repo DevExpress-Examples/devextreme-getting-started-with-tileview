@@ -14,7 +14,7 @@ export class AppComponent {
   // Assign DevExtreme formatNumber to an AppComponent variable to call the function in the template
   formatNumber = formatNumber;
 
-  onItemClick(e: DxTileViewTypes.ItemClickEvent): void {
+  handleItemClick(e: DxTileViewTypes.ItemClickEvent): void {
     notify(`Price: ${formatNumber(e.itemData.price, 'currency')}`);
   }
 
