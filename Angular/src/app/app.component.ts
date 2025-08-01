@@ -11,13 +11,6 @@ import { formatNumber } from 'devextreme/localization';
 export class AppComponent {
   title = 'Angular';
 
-  // Assign DevExtreme formatNumber to an AppComponent variable to call the function in the template
-  formatNumber = formatNumber;
-
-  handleItemClick(e: DxTileViewTypes.ItemClickEvent): void {
-    notify(`Price: ${formatNumber(e.itemData.price, 'currency')}`);
-  }
-
   bikes = [{
     id: 1,
     price: 347,
@@ -134,4 +127,11 @@ export class AppComponent {
     price: 313,
     imageSrc: 'assets/bike-81988162.jpg',
   }];
+
+  // Assign DevExtreme formatNumber to an AppComponent variable to call the function in the template
+  formatNumber = formatNumber;
+
+  handleItemClick(e: DxTileViewTypes.ItemClickEvent): void {
+    notify(`Price: ${formatNumber(e.itemData.price, 'currency')}`);
+  }
 }
