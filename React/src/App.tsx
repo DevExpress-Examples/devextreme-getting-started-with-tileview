@@ -4,7 +4,7 @@ import 'devextreme/dist/css/dx.material.blue.light.compact.css';
 import { TileView, type TileViewTypes } from 'devextreme-react/tile-view';
 import notify from 'devextreme/ui/notify';
 import { formatNumber } from 'devextreme/localization';
-import { bikes } from './data.js'
+import { bikes } from './data.js';
 
 function TileRender(itemData: { price: number; disabled: boolean | undefined; imageSrc: string }): JSX.Element {
   if (!itemData.disabled) {
