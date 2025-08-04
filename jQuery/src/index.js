@@ -1,6 +1,6 @@
 $(() => {
   $('#tileview').dxTileView({
-    items: bikes,
+    dataSource: bikes,
     itemMargin: 5,
     baseItemWidth: 175,
     baseItemHeight: 175,
