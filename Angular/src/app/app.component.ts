@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { ClickEvent } from 'devextreme/ui/button';
+import { DxTileViewTypes } from 'devextreme-angular/ui/tile-view';
+import notify from 'devextreme/ui/notify';
+import { formatNumber } from 'devextreme/localization';
+import { bikes } from './data';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +12,11 @@ import { ClickEvent } from 'devextreme/ui/button';
 export class AppComponent {
   title = 'Angular';
 
-  counter = 0;
+  // Create local versions of formatNumber and bikes to implement in app.component.html
+  formatNumber = formatNumber;
+  bikes = bikes;
 
-  buttonText = 'Click count: 0';
-
-  onClick(e: ClickEvent): void {
-    this.counter++;
-    this.buttonText = `Click count: ${this.counter}`;
+  handleItemClick(e: DxTileViewTypes.ItemClickEvent): void {
+    notify(`Price: ${formatNumber(e.itemData.price, 'currency')}`);
   }
 }
