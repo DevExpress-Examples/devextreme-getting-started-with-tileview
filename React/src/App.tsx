@@ -38,7 +38,7 @@ function App(): JSX.Element {
         height={370}
         itemRender={TileRender}
         onItemClick={HandleTileClick}
-      ></TileView>
+      />
     </React.Fragment>
   );
 }
