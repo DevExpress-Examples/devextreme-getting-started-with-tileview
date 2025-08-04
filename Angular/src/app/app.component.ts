@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { DxTileViewTypes } from 'devextreme-angular/ui/tile-view';
 import notify from 'devextreme/ui/notify';
 import { formatNumber } from 'devextreme/localization';
-import { bikes } from './data'
+import { bikes } from './data';
 
 @Component({
   selector: 'app-root',
