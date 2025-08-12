@@ -10,8 +10,8 @@ $(() => {
     itemTemplate(itemData, itemIndex, itemElement) {
       const iconBox = $('<div>')
         .addClass('icon-box')
-        .append($('<i>')
-          .addClass(`dx-icon-${itemData.icon}`)
+        .append(
+          $('<i>').addClass(`dx-icon-${itemData.icon}`),
         );
 
       const textBox = $('<div>')
