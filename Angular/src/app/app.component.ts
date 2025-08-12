@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { DxTileViewTypes } from 'devextreme-angular/ui/tile-view';
-import notify from 'devextreme/ui/notify';
-import { formatNumber } from 'devextreme/localization';
-import { bikes } from './data';
+import { tiles } from './data';
 
 @Component({
   selector: 'app-root',
@@ -12,11 +9,6 @@ import { bikes } from './data';
 export class AppComponent {
   title = 'Angular';
 
-  // Create local versions of formatNumber and bikes to implement in app.component.html
-  formatNumber = formatNumber;
-  bikes = bikes;
-
-  handleItemClick(e: DxTileViewTypes.ItemClickEvent): void {
-    notify(`Price: ${formatNumber(e.itemData.price, 'currency')}`);
-  }
+  // Create a local version of tiles to implement in app.component.html
+  tiles = tiles;
 }
