@@ -11,7 +11,6 @@ import { tiles } from '@/data.js';
       :item-margin="16"
       :base-item-width="280"
       :base-item-height="160"
-      
       :height="368"
       :active-state-enabled="false"
       item-template="tileTemplate"
