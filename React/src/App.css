@@ -8,10 +8,10 @@
 }
 
 .demo-container {
-    height: 496px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 496px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dx-tile {
