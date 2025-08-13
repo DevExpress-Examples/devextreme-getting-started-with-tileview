@@ -1,29 +1,31 @@
 $(() => {
   $('#tileview').dxTileView({
-    dataSource: bikes,
-    itemMargin: 5,
-    baseItemWidth: 175,
-    baseItemHeight: 175,
-    showScrollbar: 'always',
-    height: 370,
+    dataSource: tiles,
+    itemMargin: 16,
+    baseItemWidth: 280,
+    baseItemHeight: 160,
+    height: 368,
+    activeStateEnabled: false,
     itemTemplate(itemData, itemIndex, itemElement) {
-      const text = itemData.disabled ? 'Out of stock' : DevExpress.localization.formatNumber(itemData.price, 'currency');
+      const iconBox = $('<div>')
+        .addClass('icon-box')
+        .append(
+          $('<i>').addClass(`dx-icon-${itemData.icon}`),
+        );
 
-      const element = $('<div>')
-        .addClass('image')
-        .css('background-image', `url(${itemData.imageSrc})`)
-        .append($('<p>')
-          .text(text)
-          .addClass('price-text'));
+      const textBox = $('<div>')
+        .addClass('text-box')
+        .append(
+          $('<h3>')
+            .addClass('tile-title')
+            .text(itemData.title),
+          $('<p>')
+            .addClass('tile-text')
+            .text(itemData.text),
+        );
 
-      if (itemData.disabled) {
-        element.css('opacity', '50%');
-      }
-
-      itemElement.append(element);
-    },
-    onItemClick(e) {
-      DevExpress.ui.notify(`Price: ${DevExpress.localization.formatNumber(e.itemData.price, 'currency')}`);
+      itemElement.append(iconBox);
+      itemElement.append(textBox);
     },
   });
 });
