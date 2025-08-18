@@ -1,4 +1,4 @@
-import 'devextreme/dist/css/dx.fluent.blue.dark.css';
+import 'devextreme/dist/css/dx.fluent.blue.light.css';
 import './App.css';
 import { TileView } from 'devextreme-react/tile-view';
 import { tiles } from './data.js';

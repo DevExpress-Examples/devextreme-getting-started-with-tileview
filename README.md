@@ -4,17 +4,11 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# DevExtreme Examples Template
+# DevExtreme TileView - Getting Started
 
-This is the repository template for creating new examples. 
+This repository stores code for the following DevExpress tutorial: [Getting Started with DevExtreme TileView](https://js.devexpress.com/Documentation/Guide/UI_Components/TileView/Getting_Started_with_TileView/). The project creates a TileView and configures the component's core settings.
 
-Use **DevExtreme _Product_ - _Task_** template for a title. 
-
-Describe the solved task in this section.
-
-Put a screenshot/gif that illustrates the result here.
-
-Then, add implementation details (steps, code snippets, and other technical information in a free form), or add a link to an existing document with implementation details. 
+<div align="center"><img src="./TileView.png" /></div>
 
 ## Files to Review
 
@@ -32,15 +26,9 @@ Then, add implementation details (steps, code snippets, and other technical info
 
 ## Documentation
 
-- link
-- link
-- ...
+- [Getting Started with TileView](https://js.devexpress.com/Documentation/Guide/UI_Components/TileView/Getting_Started_with_TileView/)
 
-## More Examples
-
-- link
-- link
-- ...
+- [TileView - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxTileView/)
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
