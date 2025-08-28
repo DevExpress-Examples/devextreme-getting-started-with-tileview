@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import 'devextreme/dist/css/dx.fluent.blue.light.css';
 import { DxTileView } from 'devextreme-vue/tile-view';
-import { tiles } from '@/data.js';
+import { tiles } from '@/data';
 
 </script>
 <template>
