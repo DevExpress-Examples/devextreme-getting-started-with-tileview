@@ -17,7 +17,7 @@ import { tiles } from '@/data';
     >
       <template #tileTemplate="data">
         <div class="icon-box">
-          <i :class="`dx-icon-${data.data.icon}`"></i>
+          <i :class="`dx-icon-${data.data.icon}`"/>
         </div>
         <div class="text-box">
           <h3 class="tile-title">{{ data.data.title }}</h3>
