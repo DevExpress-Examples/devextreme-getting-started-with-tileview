@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { tiles } from './data';
 
 import { DxTileViewModule } from 'devextreme-angular/ui/tile-view';
@@ -7,6 +7,7 @@ import { DxTileViewModule } from 'devextreme-angular/ui/tile-view';
     selector: 'app-root',
     imports: [DxTileViewModule],
     templateUrl: './app.component.html',
+    changeDetection: ChangeDetectionStrategy.Eager,
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
